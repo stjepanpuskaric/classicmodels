@@ -1,2 +1,5 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+#odaberite sve nazive proizvoda s pripadajucim nazivom proizvodne linije
+select b.productName, b.productline
+from productlines a inner join products b 
+on a.productline=b.productline;
+
